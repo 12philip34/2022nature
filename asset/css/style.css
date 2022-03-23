@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #2c700e;
+  width: 100%;
+}
+.logo{
+  padding-left: 20px;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.img-logo{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgb(44, 108, 180);
+}
+
+ul.topnav li {float: right;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: rgb(54, 72, 88);}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.right {float: right;}
+.row{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 15% 7% 0 5%;
+}
+.col-1{
+  background-color: rgba(0, 0, 0, 0.322);
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+  border-radius: 40px;
+}
+.col-3{
+  background-color: rgba(0, 0, 0, 0.322);
+  grid-column: 3/3;
+  border-radius: 40px;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+.top-con{
+  background-image: url(../images/tree.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+.step-img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 4%;
+}
+/* middle container */
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  margin: 30px;
+
+}
+.grid-1, .grid-2, .grid-3{
+  background: #3dc2ab;
+  padding: 30px;
+  border-radius: 30px;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  line-height: 30px;
+}
+#grid-2{
+  background: rgb(44, 108, 180);
+}
+.grid-1-image{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.grid-2-image{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.grid-3-image{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+
+  ul.topnav{
+    background-color: rgba(0, 0, 0, 0.61);
+  }
+  .row{
+    display: block;
+  background-color: rgba(0, 0, 0, 0.599);
+
+  }
+  .col-1{
+    margin-bottom: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  }
+  .col-3{
+  background-color: rgba(0, 0, 0, 0.5);
+
+  }
+  .grid{
+    display: block;
+    margin: 10px;
+  }
+  .grid-1, .grid-2, grid-3{
+    margin: 40px 0;
+    width: 100%;
+    padding: 30px;
+  }
+}
